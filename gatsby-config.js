@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Karrinyup Leave No Trace Scout Group`,
+    description: `At Karrinyup Leave No Trace Scout Group we offer people of all ages a variety of exciting experiences including camping, hiking, water activities, canoeing, rewarding service project and leadership opportunities and most of all, fun and friendship. Scouting is all about "Learning Through Doing", and we follow the principle of "Plan, Do, Review"`,
+    author: `@StevenPeng`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,11 +18,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Karrinyup-Leave-No-Trace-Scout-Group`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#222d65`,
+        theme_color: `#222d65`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
