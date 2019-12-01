@@ -14,51 +14,63 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <div className="header__menu">
-        <img src={MenuSVG} alt="" />
-      </div>
     </div>
     <nav className="nav">
-      <div className="icon"></div>
+      <div className="nav__menu">
+        <img src={MenuSVG} />
+        Menu
+      </div>
       <ul className="nav__list">
-        <li>
+        <li className="nav__item">
           <Link className="nav__link" to="/">
-            Group
+            <span className="nav__title">Group</span>
           </Link>
         </li>
-        <li className="nav__list--subMenu">
-          <Link className="nav__link">Sections</Link>
-          <ul className="nav__subNav">
-            <li>
-              <Link to="/">Joey Scout</Link>
+        <li className="nav__item hasDropdown">
+          <Link className="nav__link" to="/">
+            <span className="nav__title">Sections</span>
+          </Link>
+          <ul className="dropdownMenu">
+            <li className="nav__item">
+              <Link className="nav__link" to="/">
+                <span className="nav__title">Joey Scout</span>
+              </Link>
             </li>
-            <li>
-              <Link to="/">Cub Scout</Link>
+            <li className="nav__item">
+              <Link className="nav__link" to="/">
+                <span className="nav__title">Cub Scout</span>
+              </Link>
             </li>
-            <li>
-              <Link to="/">Scouts</Link>
+            <li className="nav__item">
+              <Link className="nav__link" to="/">
+                <span className="nav__title">Scouts</span>
+              </Link>
             </li>
-            <li>
-              <Link to="/">Venturer Scout</Link>
+            <li className="nav__item">
+              <Link className="nav__link" to="/">
+                <span className="nav__title">Venturer Scout</span>
+              </Link>
             </li>
-            <li>
-              <Link to="/">Adult Leader</Link>
+            <li className="nav__item">
+              <Link className="nav__link" to="/">
+                <span className="nav__title">Adult Leader</span>
+              </Link>
             </li>
           </ul>
         </li>
-        <li>
+        <li className="nav__item">
           <Link className="nav__link" to="/">
-            News
+            <span className="nav__title">News</span>
           </Link>
         </li>
-        <li>
+        <li className="nav__item">
           <Link className="nav__link" to="/">
-            Gallery
+            <span className="nav__title">Gallery</span>
           </Link>
         </li>
-        <li>
+        <li className="nav__item">
           <Link className="nav__link" to="/">
-            Find Us
+            <span className="nav__title">Find Us</span>
           </Link>
         </li>
       </ul>
