@@ -1,0 +1,35 @@
+.sections {
+  background-image: url(../../images/home-bg-1.png);
+  background-size: cover;
+  background-position: center;
+  // height: 720px;
+  padding-bottom: 200px;
+  color: theme-color("light");
+  a {
+    color: theme-color("light");
+  }
+
+  &__text {
+    margin: 1rem auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  &__cards {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+
+  @include tablet {
+    padding-bottom: 300px;
+    &__cards {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  @include phone {
+    &__cards {
+    }
+  }
+}

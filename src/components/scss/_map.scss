@@ -1,0 +1,9 @@
+.map {
+  background-color: theme-color("primary");
+  color: theme-color("light");
+
+  padding: 2rem 3rem;
+  .map__frame {
+    height: 600px;
+  }
+}

@@ -1,23 +1,24 @@
 .btn--light {
-  border: 1px solid $color-primary;
-  color: $color-primary;
+  border: 1px solid theme-color("primary");
+  color: theme-color("light");
 }
 .btn--dark {
-  border: 1px solid #eee;
+  border: 1px solid rgb(87, 78, 78);
   color: #eee;
 }
 
 .btn {
-  background-color: transparent;
+  background-color: theme-color("primary");
   border-radius: 30px;
   text-decoration: none currentcolor solid;
   transition: 0.2s all ease;
   padding: 10px 15px;
 }
 
-.btn--light:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+.btn:hover {
+  background-color: theme-color("light");
+  color: theme-color("primary");
 }
 .btn--dark:hover {
-  background-color: $color-primary;
+  background-color: theme-color("primary");
 }

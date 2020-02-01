@@ -42,7 +42,11 @@ const Footer = ({ siteTitle }) => (
             </li>
             <li>
               Address:
-              <a href="https://goo.gl/maps/2GwCS64bfUX1QuG39" target="_blank">
+              <a
+                href="https://goo.gl/maps/2GwCS64bfUX1QuG39"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <address>
                   45 Huntriss Rd,
                   <br />

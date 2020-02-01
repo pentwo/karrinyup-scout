@@ -1,0 +1,51 @@
+.hero {
+  height: 720px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  // background: url(../../images/slider-bg-new.jpg) center center / cover;
+
+  position: relative;
+
+  color: theme-color("light");
+
+  h1 {
+    @include phone {
+      font-size: 2em;
+    }
+  }
+
+  &__image {
+    border-radius: 100%;
+  }
+
+  &__Jumbotron {
+    width: 960px;
+    &__title {
+      position: relative;
+    }
+    &__title:after {
+      content: "";
+      background-color: theme-color("warning");
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 5px;
+      width: 75%;
+      z-index: -1;
+    }
+  }
+
+  &__Video {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: -100;
+    filter: grayscale(0.75);
+  }
+}
