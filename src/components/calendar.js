@@ -1,16 +1,15 @@
 import React from "react"
 
 export default function calendar() {
-  const width = document.documentElement.clientWidth
-  console.log("width: ", width)
+  // const width = document.documentElement.clientWidth
 
-  const calMode = width > 568 ? "MONTH" : "AGENDA"
+  // const calMode = width > 568 ? "MONTH" : "AGENDA"
   return (
     <section className="container-fluid calendar">
       <h2 className="text-center"> Our calendar</h2>
       <iframe
         id="558097969"
-        src={`https\://calendar.google.com/calendar/embed?src=karrinyuplnthallhire@gmail.com&color=%23212e67&mode=${calMode}&ctz=GMT+8&showTitle=0&showNav=1&showDate=1&showTabs=1&showCalendars=0&hl=en`}
+        src={`https\://calendar.google.com/calendar/embed?src=karrinyuplnthallhire@gmail.com&color=%23212e67&mode=MONTH&ctz=GMT+8&showTitle=0&showNav=1&showDate=1&showTabs=1&showCalendars=0&hl=en`}
         title="karrinyuplnthallhire@gmail.com"
         scrolling="no"
         width="100%"
