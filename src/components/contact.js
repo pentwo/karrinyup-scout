@@ -1,6 +1,8 @@
 import React from "react"
 import { navigate } from "gatsby-link"
 
+import EmailIcon from "../images/email.png"
+
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -117,10 +119,7 @@ function Contact() {
           </form>
         </div>
         <div className="contact__form__icon">
-          <img
-            className="icon"
-            src="https://img.icons8.com/clouds/320/000000/email.png"
-          />
+          <img className="icon" src={EmailIcon} />
         </div>
       </div>
     </section>
