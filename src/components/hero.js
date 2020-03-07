@@ -9,7 +9,7 @@ import heroVideoPoster from "../images/slider-bg-new.jpg"
 const Hero = () => {
   return (
     <section className="hero">
-      {/* <video
+      <video
         autoPlay
         playsInline
         loop
@@ -18,7 +18,7 @@ const Hero = () => {
         poster={heroVideoPoster}
       >
         <source src={heroVideo} type="video/mp4"></source>
-      </video> */}
+      </video>
       <Jumbotron className="hero__Jumbotron">
         <h1 className="display-4 ">
           Be Prepared for...
