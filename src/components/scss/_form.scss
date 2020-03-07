@@ -1,0 +1,30 @@
+.contact {
+  background-color: theme-color("light");
+  color: theme-color("primary");
+
+  padding: 2rem 3rem;
+  &__form {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+    &__icon {
+      justify-self: center;
+      align-self: center;
+      .icon {
+        width: 320px;
+        height: 320px;
+      }
+    }
+    @include tablet {
+      grid-template-columns: 1fr;
+      &__icon {
+        grid-row: 1 / 2;
+
+        .icon {
+          width: 240px;
+          height: 240px;
+        }
+      }
+    }
+  }
+}

@@ -21,7 +21,7 @@ export default function sections() {
   return (
     <section className="container-fluid sections">
       <div className="sections__text">
-        <h1>Explore Our Sections</h1>
+        <h2 className="text-center">Explore Our Sections</h2>
         <p>
           Scouts Australia provides fun youth development activities, building
           resilient and confident boys and girls aged 5 to 25 in the Joey Scout,

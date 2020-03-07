@@ -11407,6 +11407,10 @@ th {
   }
 }
 
+.calendar {
+  padding: 2rem 3rem;
+}
+
 .map {
   background-color: #212e67;
   color: #f8f9fa;
@@ -11415,6 +11419,48 @@ th {
 
 .map .map__frame {
   height: 600px;
+}
+
+.contact {
+  background-color: #f8f9fa;
+  color: #212e67;
+  padding: 2rem 3rem;
+}
+
+.contact__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+}
+
+.contact__form__icon {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.contact__form__icon .icon {
+  width: 320px;
+  height: 320px;
+}
+
+@media (max-width: 768px) {
+  .contact__form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .contact__form__icon {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .contact__form__icon .icon {
+    width: 240px;
+    height: 240px;
+  }
 }
 
 .footer {
