@@ -13,7 +13,7 @@ function Contact() {
   const [state, setState] = React.useState({})
 
   const handleChange = e => {
-    const form = form
+    const form = e.target
 
     if (form.name === "phone" && form.value !== "") {
       const value =
@@ -22,8 +22,6 @@ function Contact() {
         form.value.slice(4, 7) +
         "-" +
         form.value.slice(7)
-
-      console.log("value: ", value)
       setState({ ...state, [form.name]: value })
     } else {
       setState({ ...state, [form.name]: form.value })
@@ -33,6 +31,7 @@ function Contact() {
   const handleSubmit = e => {
     e.preventDefault()
     const form = e.target
+    console.log("form-data", state)
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -54,12 +53,12 @@ function Contact() {
             method="post"
             data-netlify="true"
             netlify-honeypot="bot-field"
-            action="/"
+            action="/thankyou"
             onSubmit={handleSubmit}
           >
             <input type="hidden" name="form-name" value="contact" />
             <div className="form-group">
-              <label for="contactName">
+              <label htmlFor="contactName">
                 Name <small>*Required</small>
               </label>
 
@@ -74,8 +73,8 @@ function Contact() {
               />
             </div>
             <div className="form-group">
-              <label for="contactEmail">
-                Email <small>*Required</small>
+              <label htmlFor="contactEmail">
+                Email <small>*Required</small>{" "}
               </label>
               <input
                 className="form-control"
@@ -88,7 +87,7 @@ function Contact() {
               />
             </div>
             <div className="form-group">
-              <label for="contactPhone">Contact Number</label>
+              <label htmlFor="contactPhone">Contact Number</label>
               <input
                 className="form-control"
                 type="tel"
@@ -100,10 +99,9 @@ function Contact() {
               />
             </div>
             <div className="form-group">
-              <label for="contactMessage">
+              <label htmlFor="contactMessage">
                 Message <small>*Required</small>
               </label>
-
               <textarea
                 className="form-control"
                 name="message"
@@ -114,12 +112,15 @@ function Contact() {
               />
             </div>
             <button type="submit" className="btn btn-primary ">
-              Send 📝
+              Send
+              <span aria-label="send" role="img">
+                📝
+              </span>
             </button>
           </form>
         </div>
         <div className="contact__form__icon">
-          <img className="icon" src={EmailIcon} />
+          <img className="icon" alt="email" src={EmailIcon} />
         </div>
       </div>
     </section>

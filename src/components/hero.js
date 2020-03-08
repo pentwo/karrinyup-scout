@@ -1,9 +1,9 @@
-import { Link, graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { Link } from "gatsby"
+
 import PropTypes from "prop-types"
 import React from "react"
 
-import { Jumbotron, Container, Button } from "reactstrap"
+import { Jumbotron, Button } from "reactstrap"
 import heroVideo from "../Videos/hero-video-1.mp4"
 import heroVideoPoster from "../images/slider-bg-new.jpg"
 const Hero = () => {
@@ -44,26 +44,3 @@ Hero.defaultProps = {
 }
 
 export default Hero
-
-const HeroImage = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        file(relativePath: { eq: "slider-bg-new-crop.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 640) {
-              ...GatsbyImageSharpFluid_noBase64
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
-      <Img
-        alt="New adventure"
-        className="hero__image"
-        fluid={data.file.childImageSharp.fluid}
-      />
-    )}
-  />
-)
