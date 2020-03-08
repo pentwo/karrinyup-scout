@@ -1,14 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  Button,
-} from "reactstrap"
+import { Card, CardImg, CardBody, CardTitle, CardSubtitle } from "reactstrap"
 
 import Adultvolunteers from "../images/sections/adultvolunteers-1.png"
 import Cubscouts from "../images/sections/cubscouts-1.png"

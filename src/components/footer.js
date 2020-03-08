@@ -1,5 +1,3 @@
-import { Link, graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import React from "react"
 

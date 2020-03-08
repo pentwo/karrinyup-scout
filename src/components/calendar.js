@@ -9,7 +9,7 @@ export default function calendar() {
       <h2 className="text-center"> Our calendar</h2>
       <iframe
         id="558097969"
-        src={`https\://calendar.google.com/calendar/embed?src=karrinyuplnthallhire@gmail.com&color=%23212e67&mode=MONTH&ctz=GMT+8&showTitle=0&showNav=1&showDate=1&showTabs=1&showCalendars=0&hl=en`}
+        src={`https://calendar.google.com/calendar/embed?src=karrinyuplnthallhire@gmail.com&color=%23212e67&mode=MONTH&ctz=GMT+8&showTitle=0&showNav=1&showDate=1&showTabs=1&showCalendars=0&hl=en`}
         title="karrinyuplnthallhire@gmail.com"
         scrolling="no"
         width="100%"

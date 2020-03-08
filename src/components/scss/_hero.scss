@@ -40,12 +40,14 @@
 
   &__Video {
     position: absolute;
+    min-width: 100%;
+    min-height: 100%;
 
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 
     z-index: -100;
-    filter: grayscale(0.75);
+    // filter: grayscale(0.75);
   }
 }

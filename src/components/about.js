@@ -35,12 +35,21 @@ export default function about() {
         <br />
         we offer people of all ages a variety of exciting experiences including
         <br />
-        <span className="emoji">🏕️</span>
-        camping, <span className="emoji">🥾</span>
+        <span className="emoji" role="img" aria-label="camping">
+          🏕️
+        </span>
+        camping,{" "}
+        <span className="emoji" role="img" aria-label="hiking">
+          🥾
+        </span>
         hiking,
-        <span className="emoji">🏊</span>
+        <span className="emoji" role="img" aria-label="water activities">
+          🏊
+        </span>
         water activities,
-        <span className="emoji">🚣</span>
+        <span className="emoji" role="img" aria-label="canoeing">
+          🚣
+        </span>
         canoeing... and much more.
         <br />
         Providing rewarding service project and leadership opportunities <br />
@@ -50,11 +59,17 @@ export default function about() {
         Scouting is all about{" "}
         <span className="highlight">Learning Through Doing.</span>
         <br /> and we follow the principle of
-        <span className="emoji">📅</span>
+        <span className="emoji" role="img" aria-label="plan">
+          📅
+        </span>
         Plan
-        <span className="emoji">💪</span>
+        <span className="emoji" role="img" aria-label="do">
+          💪
+        </span>
         Do
-        <span className="emoji">📝</span>
+        <span className="emoji" role="img" aria-label="review">
+          📝
+        </span>
         Review
       </p>
     </section>
