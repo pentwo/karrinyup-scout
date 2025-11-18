@@ -8,7 +8,6 @@ import SEO from "../components/seo"
 
 const GroupPage = () => (
   <Layout>
-    <SEO title="Group" />
     <section>
       <h2 className="text-center">Scouting Philosophy</h2>
 
@@ -183,6 +182,8 @@ const GroupPage = () => (
 )
 
 export default GroupPage
+
+export const Head = () => <SEO title="Group" />
 
 const PromotePhoto = () => (
   <StaticQuery
