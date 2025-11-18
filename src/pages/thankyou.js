@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 
 const ThankYouPage = () => (
   <Layout>
-    <SEO title="Thank you" />
     <div className="container-fluid">
       <h1>Thank you</h1>
       <p>
@@ -16,3 +15,5 @@ const ThankYouPage = () => (
 )
 
 export default ThankYouPage
+
+export const Head = () => <SEO title="Thank you" />

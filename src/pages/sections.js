@@ -7,8 +7,6 @@ import SEO from "../components/seo"
 
 const SectionPage = () => (
   <Layout>
-    <SEO title="Section" />
-
     <section>
       <h1>Explore Our Sections</h1>
       <p>
@@ -23,6 +21,7 @@ const SectionPage = () => (
 
       <div>Joey Scouts Ages 5-7</div>
       <div>Cub Scouts Ages 8-11</div>
+      <div>Scouts Ages 8-11</div>
       <div>Scouts Ages 11-14</div>
       <div>Venturer Scouts Ages 15-17</div>
       <div>Rover Scouts Ages 18-25</div>
@@ -33,3 +32,5 @@ const SectionPage = () => (
 )
 
 export default SectionPage
+
+export const Head = () => <SEO title="Section" />

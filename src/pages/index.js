@@ -12,7 +12,6 @@ import Contact from "../components/contact"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
     <Hero />
     <About />
     <Sections />
@@ -23,3 +22,5 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const Head = () => <SEO title="Home" />
