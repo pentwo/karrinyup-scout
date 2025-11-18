@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import { Jumbotron, Button } from "reactstrap"
+import { Button } from "reactstrap"
 import heroVideo from "../Videos/hero-video-1.mp4"
 import heroVideoPoster from "../images/slider-bg-new.jpg"
 const Hero = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
       >
         <source src={heroVideo} type="video/mp4"></source>
       </video>
-      <Jumbotron className="hero__Jumbotron">
+      <div className="hero__Jumbotron">
         <h1 className="display-4 ">
           Be Prepared for...
           <br />
@@ -30,7 +30,7 @@ const Hero = () => {
             Learn More
           </Button>
         </p>
-      </Jumbotron>
+      </div>
     </section>
   )
 }
