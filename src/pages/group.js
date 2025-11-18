@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -190,19 +190,20 @@ const PromotePhoto = () => (
       query {
         file(relativePath: { eq: "Scouts_0081.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 960) {
-              ...GatsbyImageSharpFluid_noBase64
-            }
+            gatsbyImageData(width: 960, placeholder: DOMINANT_COLOR)
           }
         }
       }
     `}
-    render={data => (
-      <Img
-        alt="Investing a Joey Scout"
-        className="img-fluid"
-        fluid={data.file.childImageSharp.fluid}
-      />
-    )}
+    render={data => {
+      const image = getImage(data.file)
+      return (
+        <GatsbyImage
+          image={image}
+          alt="Investing a Joey Scout"
+          className="img-fluid"
+        />
+      )
+    }}
   />
 )
